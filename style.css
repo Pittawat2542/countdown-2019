@@ -3,6 +3,10 @@ html {
   height: 100%;
 }
 
+.none {
+  display: none;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -28,5 +32,25 @@ html {
   }
   to {
     -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dot {
+    display: none;
+  }
+  timer > span {
+    display: inline-block;
+  }
+  
+  .center {
+    margin-left: 1rem;
+    min-height: 10vh;
+  }
+
+  .none {
+    display: inline;
+    align-items: left;
+    font-size: 3rem;
   }
 }
