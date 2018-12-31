@@ -1,0 +1,32 @@
+html {
+  background: #f0f0f0;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#timer {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #090909;
+  background-image: -webkit-linear-gradient(0deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 5s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
